@@ -1,0 +1,14 @@
+{
+  "name": "ai-expense-tracker-root",
+  "version": "1.0.0",
+  "description": "MERN AI Expense Tracker",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm run dev",
+    "install-all": "npm install concurrently && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
